@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript">
+  // Client End Scripting
+    function validateForm() {
+      var a = document.forms["registrationform"]["name"].value;
+      if (a == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      var b = document.forms["registrationform"]["email"].value;
+      if (b == "") {
+        alert("Email must be filled out");
+        return false;
+      }
+      var c = document.forms["registrationform"]["contact"].value;
+      if (c == "") {
+        alert("Contact No. must be filled out");
+        return false;
+      }
+      var d = document.forms["registrationform"]["password"].value;
+      if (d == "") {
+        alert("Password must be filled out");
+        return false;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Register for free!!!</h1>
+  <div class="formcontainer">
+    <form action="reg.php" method="post" onsubmit="return validateForm()" name="registrationform">
+      <fieldset style="border: solid red">
+        <legend>LET US KNOW YOU</legend>
+      <div class="data">
+        <label>Avataar Name:</label>
+        <input type="text" class="ab" name="name" value="" placeholder="Enter Your Avataar Name">
+      </div>
+      <div class="data">
+        <label>Email:</label>
+        <input type="email" class="ab" name="email" value="" placeholder="Enter Your Email">
+      </div>
+      <div class="data">
+        <label>Contact No.</label>
+        <input type="Contact" class="ab" name="contact" value="" placeholder="Enter Your No.">
+      </div>
+      <div class="data">
+        <label>Password:</label>
+        <input type="password" class="ab" name="password" value="" placeholder="Enter Your Password">
+      </div>
+      <div class="data">
+        <label>Gender:</label>
+        <div class="gender">
+          <input type="radio" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="other">
+          <label for="other">Other</label>
+        </div>
+
+      </div>
+      <div class="data">
+        <label>How you came yo know about our services ?</label>
+        <div class="cd">
+          <input type="checkbox">
+          <label>Newspaper</label>
+          <input type="checkbox">
+          <label>Social Media</label>
+          <input type="checkbox">
+          <label>Television</label>
+          <input type="checkbox">
+          <label>Other</label </div>
+        </div>
+        <button class="btn" type="submit" name="button">Register</button>
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+
+</html>

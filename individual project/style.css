@@ -1,0 +1,64 @@
+body{
+  background-color: #ff4848;
+}
+h1{
+  font-family: monospace;
+  font-size: 50px;
+  margin: 80px;
+  color: white;
+  text-align: center;
+}
+.formcontainer{
+  background-color: white;
+  padding: 50px;
+  margin: 30px 250px;
+  border-radius: 5%;
+}
+label{
+  font-family:sans-serif;
+  color:#706c61;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ab:hover{
+  background-color: #ebebe3;
+}
+.data{
+  padding: 20px;
+}
+.ab{
+  display: block;
+  width: 100%;
+  margin:10px 0;
+  height: 30px;
+}
+.gender label{
+  margin-right:25px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: serif;
+}
+.gender{
+  margin: 10px 0;
+}
+.btn{
+  font-size: 20px;
+  display: block;
+  margin: 5px auto;
+  margin-top: 70px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  background-color: #323232;
+  padding: 10px 50px;
+  border-radius:20px;
+}
+.details{
+  font-size: 40px;
+  line-height: 2;
+  background-color: #e9ff04;
+  padding: 50px;
+  margin: 30px 300px;
+  border-radius: 20px;
+  text-align: center;
+}
